@@ -1,36 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Recursion
+namespace CinemaRecursion
 {
     class Program
     {
-        
-
-
-        static List<Film> Films = new List<Film> { };
-        static int _countOfFilms;
-        static int _filmDuration;
-        static string _filmName;
         static void Main(string[] args)
         {
-            Console.WriteLine(DateTime.Now);
+            List<Film> userFilmsList = new List<Film>();
+            int filmCount;
+            int cinemaWorkingMinutes = 840;
 
-            Console.WriteLine("Enter count of films");
-            _countOfFilms = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("введите количество фильмов в прокате:");
+            filmCount = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите подробную информацию о каждом фильме(название и продолжительности фильма в минутах)");
 
-
-            for (int i = 0; i <= _countOfFilms; i++)
+            for(int i = 1; i <=filmCount; i++)
             {
-            Console.WriteLine("Enter film name:");
-            _filmName = Console.ReadLine();
-
-            Console.WriteLine("Enter film duration:");
-            _filmDuration = Int32.Parse(Console.ReadLine());
-
-                Films.Add(new Film { FilmName = _filmName, FilmDuration = _filmDuration });
-            }           
-
+                Console.WriteLine($"Введите название фильма № {i}:");
+                string filmName = Console.ReadLine();
+                Console.WriteLine($"Введите длительность фильма №{i} (в минутах):");
+                int filmDuration = Convert.ToInt32(Console.ReadLine());
+                userFilmsList.Add(new Film { Duration = filmDuration, Name = filmName });
+            }
+            GraphTree cinemaTable = new GraphTree(userFilmsList, cinemaWorkingMinutes,);
+            cinemaTable.CreateTree();
+            List<TableWithFreeTime> optimalTable = cinemaTable.CreateOptimalTable();
+            PrintSchedule.PrintTable(optimalTable);
         }
     }
 }

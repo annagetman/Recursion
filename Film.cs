@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Recursion
+namespace CinemaRecursion
 {
     public class Film
     {  
-        public string FilmName { get; set; }
+        public string Name { get; set; }
        
-        public int FilmDuration { get; set; }
+        public int Duration { get; set; }
     }
 }
 

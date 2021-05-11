@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ann\\work\\C#\\Recursion\\Recursion.csproj",
-      "projectName": "Recursion",
-      "projectPath": "G:\\ann\\work\\C#\\Recursion\\Recursion.csproj",
+      "projectUniqueName": "G:\\ann\\work\\C#\\Recursion\\CinemaRecursion.csproj",
+      "projectName": "CinemaRecursion",
+      "projectPath": "G:\\ann\\work\\C#\\Recursion\\CinemaRecursion.csproj",
       "packagesPath": "C:\\Users\\ann\\.nuget\\packages\\",
       "outputPath": "G:\\ann\\work\\C#\\Recursion\\obj\\",
       "projectStyle": "PackageReference",
