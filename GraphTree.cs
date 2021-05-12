@@ -8,7 +8,7 @@ namespace CinemaRecursion
     {
         List<Film> movieList;
         Node root;
-        public List<TableWithFreeTime> allTableWithFreeTime = new List<TableWithFreeTime>();
+        public List<TableWithTreeTime> allTableWithFreeTime = new List<TableWithTreeTime>();
         public GraphTree(List<Film> list, int FreeTime)
         {
             movieList = list;
