@@ -23,7 +23,7 @@ namespace CinemaRecursion
                 int filmDuration = Convert.ToInt32(Console.ReadLine());
                 userFilmsList.Add(new Film { Duration = filmDuration, Name = filmName });
             }
-            GraphTree cinemaTable = new GraphTree(userFilmsList, cinemaWorkingMinutes,);
+            GraphTree cinemaTable = new GraphTree(userFilmsList, cinemaWorkingMinutes);
             cinemaTable.CreateTree();
             List<TableWithTreeTime> optimalTable = cinemaTable.CreateOptimalTable();
             PrintSchedule.PrintTable(optimalTable);
