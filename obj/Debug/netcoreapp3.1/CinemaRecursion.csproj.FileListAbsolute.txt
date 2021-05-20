@@ -1,0 +1,13 @@
+G:\ann\work\C#\Recursion\bin\Debug\netcoreapp3.1\CinemaRecursion.exe
+G:\ann\work\C#\Recursion\bin\Debug\netcoreapp3.1\CinemaRecursion.deps.json
+G:\ann\work\C#\Recursion\bin\Debug\netcoreapp3.1\CinemaRecursion.runtimeconfig.json
+G:\ann\work\C#\Recursion\bin\Debug\netcoreapp3.1\CinemaRecursion.runtimeconfig.dev.json
+G:\ann\work\C#\Recursion\bin\Debug\netcoreapp3.1\CinemaRecursion.dll
+G:\ann\work\C#\Recursion\bin\Debug\netcoreapp3.1\CinemaRecursion.pdb
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.csprojAssemblyReference.cache
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.AssemblyInfoInputs.cache
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.AssemblyInfo.cs
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.csproj.CoreCompileInputs.cache
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.dll
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.pdb
+G:\ann\work\C#\Recursion\obj\Debug\netcoreapp3.1\CinemaRecursion.genruntimeconfig.cache
