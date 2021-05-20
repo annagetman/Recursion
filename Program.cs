@@ -25,7 +25,7 @@ namespace CinemaRecursion
             }
             GraphTree cinemaTable = new GraphTree(userFilmsList, cinemaWorkingMinutes);
             cinemaTable.CreateTree();
-            List<TableWithTreeTime> optimalTable = cinemaTable.CreateOptimalTable();
+            TimeTable optimalTable = cinemaTable.CreateOptimalTable();
             PrintSchedule.PrintTable(optimalTable);
         }
     }

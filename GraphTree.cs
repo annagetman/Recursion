@@ -7,12 +7,37 @@ namespace CinemaRecursion
     public class GraphTree
     {
         List<Film> movieList;
+        int movieListDuration = 0;
+
         Node root;
-        public List<TableWithTreeTime> allTableWithFreeTime = new List<TableWithTreeTime>();
+        public List<TimeTable> allTableWithFreeTime = new List<TimeTable>();
+
+        public GraphTree()
+        {
+
+        }
         public GraphTree(List<Film> list, int FreeTime)
         {
             movieList = list;
-            root = new Node(FreeTime, new List<Film>());
+            movieListDuration = CalcMovieListDuration(movieList);
+            if (movieListDuration < 840)
+            {
+                root = new Node(FreeTime, new List<Film>(movieList));
+                root.RemainingTime -= movieListDuration;
+            }
+            else
+            {
+                root = new Node(FreeTime, new List<Film>());
+            }
+        }
+
+        public int CalcMovieListDuration(List<Film> movieList)
+        {
+            foreach (var movie in movieList)
+            {
+                movieListDuration += movie.Duration;
+            }
+            return movieListDuration;
         }
         public void CreateTree()
         {
@@ -39,7 +64,7 @@ namespace CinemaRecursion
             }
             if (b)
             {
-                TableWithTreeTime currentTable = new TableWithTreeTime();
+                TimeTable currentTable = new TimeTable();
                 currentTable.FreeTime = node.RemainingTime;
                 currentTable.Table = new List<Film>();
                 foreach (var value in node.CurrentFilms)
@@ -50,15 +75,20 @@ namespace CinemaRecursion
             }
         }
 
-        public List<TableWithTreeTime> CreateOptimalTable()
+        public TimeTable CreateOptimalTable()
         {
-            List<TableWithTreeTime> result = new List<TableWithTreeTime>(allTableWithFreeTime);
-
-            for (int i = allTableWithFreeTime.Count - 1; i > 0; i--)
+            List<TimeTable> result = new List<TimeTable>(allTableWithFreeTime);
+            int minFreeTime = 840;
+            TimeTable optimalTable = new TimeTable();
+            foreach (var item in result)
             {
-                result.RemoveAt(i);
+                if (minFreeTime > item.FreeTime)
+                {
+                    minFreeTime = item.FreeTime;
+                    optimalTable = item;
+                }
             }
-            return result;
+            return optimalTable;
         }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaRecursion", "CinemaRecursion.csproj", "{E890F5B0-331D-4096-B264-7A9CC2FE7506}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaRecurcionTests", "..\CinemaRecurcionTests\CinemaRecurcionTests.csproj", "{C94EF49A-A5A2-4777-A9A8-44DCEC9AC369}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E890F5B0-331D-4096-B264-7A9CC2FE7506}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E890F5B0-331D-4096-B264-7A9CC2FE7506}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E890F5B0-331D-4096-B264-7A9CC2FE7506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94EF49A-A5A2-4777-A9A8-44DCEC9AC369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94EF49A-A5A2-4777-A9A8-44DCEC9AC369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94EF49A-A5A2-4777-A9A8-44DCEC9AC369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94EF49A-A5A2-4777-A9A8-44DCEC9AC369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
