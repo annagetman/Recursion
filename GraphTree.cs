@@ -53,13 +53,7 @@ namespace CinemaRecursion
                     CreateGraph(newNode);
                 }
             }
-            bool b = true;
             foreach (var item in movieList)
-            {
-                if (node.RemainingTime >= item.Duration)
-                { b = false; }
-            }
-            if (b)
             {
                 TimeTable currentTable = new TimeTable();
                 currentTable.FreeTime = node.RemainingTime;
