@@ -12,10 +12,6 @@ namespace CinemaRecursion
         Node root;
         public List<TimeTable> allTableWithFreeTime = new List<TimeTable>();
 
-        public GraphTree()
-        {
-
-        }
         public GraphTree(List<Film> list, int FreeTime)
         {
             movieList = list;
@@ -43,6 +39,7 @@ namespace CinemaRecursion
         {
             CreateGraph(root);
         }
+
         public void CreateGraph(Node node)
         {
             foreach (var film in movieList)

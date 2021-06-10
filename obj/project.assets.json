@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ann\\work\\C#\\Recursion\\CinemaRecursion.csproj",
+      "projectUniqueName": "G:\\ann\\work\\C#\\Recursion2\\CinemaRecursion.csproj",
       "projectName": "CinemaRecursion",
-      "projectPath": "G:\\ann\\work\\C#\\Recursion\\CinemaRecursion.csproj",
+      "projectPath": "G:\\ann\\work\\C#\\Recursion2\\CinemaRecursion.csproj",
       "packagesPath": "C:\\Users\\ann\\.nuget\\packages\\",
-      "outputPath": "G:\\ann\\work\\C#\\Recursion\\obj\\",
+      "outputPath": "G:\\ann\\work\\C#\\Recursion2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ann\\AppData\\Roaming\\NuGet\\NuGet.Config",
