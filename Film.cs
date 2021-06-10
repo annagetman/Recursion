@@ -24,18 +24,6 @@ namespace CinemaRecursion
             }
             return result;
         }
-
-        public override string ToString()
-        {
-            StringBuilder result = new StringBuilder();
-            int hour = Duration / 60;
-            int minute = Duration % 60;
-            string strMinute = minute == 0 ? "00" : minute.ToString();
-            string time = $"{hour}:{strMinute}";
-            result.Append($"{time} {Name} ");
-
-            return result.ToString().Trim();
-        }
     }
 }
 

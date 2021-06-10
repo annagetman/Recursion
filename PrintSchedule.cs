@@ -9,8 +9,8 @@ namespace CinemaRecursion
         public static void PrintTable(TimeTable bestTable)
         {
             Console.WriteLine("\nОптимальное расписание работы зала кинотеатра:");
-           
-                DateTime startFilmTime = DateTime.Today;
+
+            DateTime startFilmTime = new DateTime(2021, 06, 10, 10, 00, 00);
             Console.WriteLine($"\nРасписание работы зала :");
                 foreach (var currentFilm in  bestTable.Table)
                 {
